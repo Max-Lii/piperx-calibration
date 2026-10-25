@@ -1,0 +1,37 @@
+# Operational dual Piper-X configuration for VLA/TOPP motion.
+# Copy this file outside the repository before use on the robot host.
+server:
+  host: 0.0.0.0
+  port: 8008
+lease:
+  ttl_s: 15.0
+connection:
+  idle_disconnect_s: 60.0
+driver:
+  kind: piper_x_motion
+  left_can: can_left
+  right_can: can_right
+  firmware_profile: v188
+  interface: socketcan
+  motion_speed_percent: 20
+  allow_calibration_pose_motion: true
+  gripper_open_width_m: 0.1000
+  gripper_force_n: 1.0
+  # Full Piper-X mechanical limits from the simulation URDF. TOPP applies
+  # the tighter runtime velocity and acceleration bounds.
+  joint_limits_rad:
+    - [-2.6179938, 2.6179938]
+    - [0.0, 3.1415926]
+    - [-2.9670597, 0.0]
+    - [-1.553343, 1.553343]
+    - [-1.553343, 1.553343]
+    - [-2.0943951, 2.0943951]
+safety:
+  joint_limit_rad: 3.1415926
+  # Home opens both normalized grippers (indices 6 and 13).
+  safe_home: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1]
+camera:
+  kind: mock
+auth:
+  mode: disabled
+  api_key_env: ROBOTCONTROL_API_KEY

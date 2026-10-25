@@ -1,0 +1,50 @@
+# Piper-X VLA control with three real D435 RGB cameras.
+# Host-local copy for inference; keep robotcontrol on the same host as CAN.
+server:
+  host: 0.0.0.0
+  port: 8008
+lease:
+  ttl_s: 15.0
+connection:
+  idle_disconnect_s: 60.0
+driver:
+  kind: piper_x_motion
+  left_can: can_left
+  right_can: can_right
+  firmware_profile: v188
+  interface: socketcan
+  motion_speed_percent: 20
+  allow_calibration_pose_motion: true
+  gripper_open_width_m: 0.1000
+  gripper_force_n: 1.0
+  joint_limits_rad:
+    - [-2.6179938, 2.6179938]
+    - [0.0, 3.1415926]
+    - [-2.9670597, 0.0]
+    - [-1.553343, 1.553343]
+    - [-1.553343, 1.553343]
+    - [-2.0943951, 2.0943951]
+safety:
+  joint_limit_rad: 3.1415926
+  safe_home: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1]
+camera:
+  kind: realsense
+  width: 640
+  height: 480
+  fps: 30
+  warmup_frames: 45
+  lock_auto_controls_after_warmup: true
+  # RealSense RGB exposure in microseconds. Omit to lock the warmup result.
+  manual_exposure: 120
+  enabled_roles: [left_wrist, right_wrist, third_view]
+  depth_enabled: false
+  serial_by_role:
+    left_wrist: "152222073577"
+    right_wrist: "405622073940"
+    third_view: "102422071735"
+  image_processing:
+    enabled: false
+    jpeg_quality: 90
+auth:
+  mode: disabled
+  api_key_env: ROBOTCONTROL_API_KEY

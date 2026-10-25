@@ -1,0 +1,74 @@
+# Copy to a host-local path (outside this repository) and set
+# ROBOTCONTROL_CONFIG to that path. Do not commit the copied file.
+server:
+  host: 0.0.0.0
+  port: 8008
+lease:
+  ttl_s: 15.0
+connection:
+  idle_disconnect_s: 60.0
+driver:
+  # Keep piper_x_readonly until all read-only and disconnect checks pass.
+  # piper_x_motion is an explicit first-motion backend: it permits only
+  # /v1/motions/arm followed by /v1/motions/go_home.
+  kind: piper_x_readonly
+  # Fill only after identifying the two interfaces with the read-only probe.
+  left_can: can0
+  right_can: can1
+  firmware_profile: v188
+  interface: socketcan
+  # Required only with kind: piper_x_motion.  Values must be measured and
+  # confirmed for this installed workcell; do not copy generic SDK limits.
+  # motion_speed_percent: 5
+  # Omit this field for Go-Home-only first motion. Set no higher than 0.03
+  # only after Home is physically verified, to allow one-joint micro probes.
+  # The first-motion backend rejects values above 0.0873 rad (5 degrees).
+  # first_motion_max_joint_delta_rad: 0.03
+  # After observed first-motion acceptance, this explicitly permits a
+  # configured multi-joint calibration pose; operational guards remain.
+  allow_calibration_pose_motion: false
+  # Optional normalized mapping: action 0.0 = closed, 1.0 = this measured width.
+  # Keep omitted until an empty-air supervised gripper test confirms both sides.
+  # gripper_open_width_m: 0.07
+  # gripper_force_n: 1.0
+  # joint_limits_rad:
+  #   - [-0.1, 0.1]  # joint 1: replace
+  #   - [-0.1, 0.1]  # joint 2: replace
+  #   - [-0.1, 0.1]  # joint 3: replace
+  #   - [-0.1, 0.1]  # joint 4: replace
+  #   - [-0.1, 0.1]  # joint 5: replace
+  #   - [-0.1, 0.1]  # joint 6: replace
+safety:
+  joint_limit_rad: 2.8
+  # The current workcell's six-joint Home was confirmed as all zeros. Gripper
+  # zeros mean closed and are sent only when gripper_open_width_m is configured.
+  safe_home: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+camera:
+  # Use mock until the three serials are confirmed against physical roles.
+  kind: realsense
+  width: 640
+  height: 480
+  fps: 30
+  # Start only the roles needed by the client. Set depth_enabled: false for
+  # RGB-only VLA/monitoring; calibration-frame then remains unavailable.
+  enabled_roles: [left_wrist, right_wrist, third_view]
+  depth_enabled: true
+  warmup_frames: 90
+  # Freeze the converged RGB exposure/gain/white balance for repeatable calibration.
+  lock_auto_controls_after_warmup: true
+  serial_by_role:
+    left_wrist: REPLACE_LEFT_D435_SERIAL
+    right_wrist: REPLACE_RIGHT_D435_SERIAL
+    third_view: REPLACE_THIRD_D435_SERIAL
+  image_processing:
+    enabled: false
+    backend: auto  # cpu | cuda | auto
+    device: cuda:0
+    pinned_memory: false
+    torch_compile: true  # compile and warm the fixed camera shape before serving
+    jpeg_quality: 90
+auth:
+  # The current LAN deployment intentionally has no application API key.
+  # Enable an authenticated mode only when the service is exposed beyond it.
+  mode: disabled
+  api_key_env: ROBOTCONTROL_API_KEY

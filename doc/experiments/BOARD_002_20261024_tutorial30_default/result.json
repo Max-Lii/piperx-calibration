@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "backend": "offline-sapien-rgb-fk",
+  "target_id": "BOARD_002",
+  "poses_per_arm": 30,
+  "reference_frame": "P: OpenCV Charuco board",
+  "left": {
+    "T_world_base": [
+      [
+        -0.000291002450647615,
+        -0.9999998960552329,
+        0.00035100868517018435,
+        -0.19593770755150464
+      ],
+      [
+        -0.9999995376860067,
+        0.00029132400484271903,
+        0.0009163831607111872,
+        0.39221853857989997
+      ],
+      [
+        -0.0009164853227141001,
+        -0.0003507418531483175,
+        -0.9999995185172869,
+        -0.017602013883620884
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_ee_camera": [
+      [
+        -0.012875539130582474,
+        -0.33542891576895156,
+        0.9419775278413823,
+        0.02252183163714149
+      ],
+      [
+        -0.9995110194419778,
+        0.031163159964141603,
+        -0.0025650487534508498,
+        0.040864938965652214
+      ],
+      [
+        -0.028494604860483445,
+        -0.9415499455297711,
+        -0.335666140036093,
+        0.06909955810901182
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "accepted_poses": 26,
+    "reprojection_error_px_median": 0.1584135514342022,
+    "reprojection_error_px_max": 0.31544381131746874,
+    "corner_count_min": 12,
+    "depth_consistency_median_mm": null,
+    "validation": {
+      "held_out_poses": 5,
+      "held_out_translation_median_mm": 0.6449804136529602,
+      "held_out_translation_max_mm": 2.3792631020646597,
+      "held_out_rotation_median_deg": 0.05847307310923476,
+      "held_out_rotation_max_deg": 0.26550803280287594,
+      "solver_agreement": {
+        "methods": [
+          "SHAH",
+          "LI"
+        ],
+        "base_translation_mm": 1.5040945802051253,
+        "base_rotation_deg": 0.0024786912009032865,
+        "handeye_translation_mm": 0.22594504625936354,
+        "handeye_rotation_deg": 0.0025751605016335294
+      },
+      "bootstrap": {
+        "requested_samples": 100,
+        "valid_samples": 100,
+        "base_translation_p95_mm": 1.3260119742081506,
+        "base_rotation_p95_deg": 0.1576489477290517,
+        "handeye_translation_p95_mm": 1.2062444758431385,
+        "handeye_rotation_p95_deg": 0.15878684217869055
+      }
+    },
+    "accepted_pose_ids": [
+      "left_00",
+      "left_01",
+      "left_02",
+      "left_03",
+      "left_04",
+      "left_05",
+      "left_07",
+      "left_08",
+      "left_09",
+      "left_10",
+      "left_11",
+      "left_12",
+      "left_13",
+      "left_15",
+      "left_16",
+      "left_17",
+      "left_18",
+      "left_19",
+      "left_20",
+      "left_21",
+      "left_22",
+      "left_23",
+      "left_24",
+      "left_25",
+      "left_26",
+      "left_27"
+    ],
+    "held_out_pose_ids": [
+      "left_04",
+      "left_10",
+      "left_16",
+      "left_21",
+      "left_26"
+    ]
+  },
+  "right": {
+    "T_world_base": [
+      [
+        -0.0005069598424525118,
+        -0.9999998202157705,
+        -0.00032025012827796573,
+        0.39051775665890653
+      ],
+      [
+        -0.9999997560006515,
+        0.0005071136748186766,
+        -0.0004804522441745618,
+        0.3924815094516725
+      ],
+      [
+        0.00048061456101614053,
+        0.00032000648014307576,
+        -0.9999998333027342,
+        -0.01799707232693848
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_ee_camera": [
+      [
+        -0.022383316417569243,
+        -0.34834959628464485,
+        0.9370974047101374,
+        0.021232490333308315
+      ],
+      [
+        -0.9992205283047499,
+        0.038281451498397207,
+        -0.009636715496094163,
+        0.04254379528287909
+      ],
+      [
+        -0.03251650289511098,
+        -0.9365826654596492,
+        -0.3489349334761029,
+        0.06948160608074341
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "accepted_poses": 30,
+    "reprojection_error_px_median": 0.175564402756144,
+    "reprojection_error_px_max": 0.41861610411870304,
+    "corner_count_min": 12,
+    "depth_consistency_median_mm": null,
+    "validation": {
+      "held_out_poses": 6,
+      "held_out_translation_median_mm": 0.5994978491561347,
+      "held_out_translation_max_mm": 2.2598331993297287,
+      "held_out_rotation_median_deg": 0.0681804735330478,
+      "held_out_rotation_max_deg": 0.252265497906293,
+      "solver_agreement": {
+        "methods": [
+          "SHAH",
+          "LI"
+        ],
+        "base_translation_mm": 2.31927050156822,
+        "base_rotation_deg": 0.00279534357981421,
+        "handeye_translation_mm": 0.43313534548238025,
+        "handeye_rotation_deg": 0.0029791621216952325
+      },
+      "bootstrap": {
+        "requested_samples": 100,
+        "valid_samples": 100,
+        "base_translation_p95_mm": 1.0390369752667359,
+        "base_rotation_p95_deg": 0.16284933101590376,
+        "handeye_translation_p95_mm": 0.9591774401280083,
+        "handeye_rotation_p95_deg": 0.16451350161788802
+      }
+    },
+    "accepted_pose_ids": [
+      "right_00",
+      "right_01",
+      "right_02",
+      "right_03",
+      "right_04",
+      "right_05",
+      "right_06",
+      "right_07",
+      "right_08",
+      "right_09",
+      "right_10",
+      "right_11",
+      "right_12",
+      "right_13",
+      "right_14",
+      "right_15",
+      "right_16",
+      "right_17",
+      "right_18",
+      "right_19",
+      "right_20",
+      "right_21",
+      "right_22",
+      "right_23",
+      "right_24",
+      "right_25",
+      "right_26",
+      "right_27",
+      "right_28",
+      "right_29"
+    ],
+    "held_out_pose_ids": [
+      "right_04",
+      "right_09",
+      "right_14",
+      "right_19",
+      "right_24",
+      "right_29"
+    ]
+  },
+  "third": {
+    "T_world_camera": [
+      [
+        0.9999817656406385,
+        0.005479888165266251,
+        -0.0025375602312335743,
+        0.061533094398098516
+      ],
+      [
+        -0.006012087924002008,
+        0.8638271421102295,
+        -0.5037524425275451,
+        0.394580359826486
+      ],
+      [
+        -0.0005684936455515904,
+        0.5037585129597016,
+        0.8638443363451572,
+        -0.5190535730111242
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "height_from_target_plane_mm": 519.0535730111242,
+    "pitch_deg": 59.75100440817111,
+    "reprojection_error_px": 0.492987496730125,
+    "depth_consistency_mm": null,
+    "source_pose_id": "left_00"
+  },
+  "dual_base_distance_mm": 586.4556562325083,
+  "base_height_from_target_plane_mm": {
+    "left": 17.602013883620884,
+    "right": 17.99707232693848
+  },
+  "rejected_poses": {
+    "left": [
+      {
+        "pose_id": "left_06",
+        "reasons": [
+          "insufficient_charuco_corners"
+        ]
+      },
+      {
+        "pose_id": "left_14",
+        "reasons": [
+          "insufficient_charuco_corners"
+        ]
+      },
+      {
+        "pose_id": "left_28",
+        "reasons": [
+          "insufficient_charuco_corners"
+        ]
+      },
+      {
+        "pose_id": "left_29",
+        "reasons": [
+          "insufficient_charuco_corners"
+        ]
+      }
+    ],
+    "right": []
+  },
+  "quality": {
+    "passed": true,
+    "reasons": [],
+    "warnings": [],
+    "thresholds": {
+      "minimum_accepted_poses_per_arm": 6,
+      "maximum_reprojection_error_px": 2.0,
+      "maximum_held_out_translation_mm": 10.0,
+      "maximum_held_out_rotation_deg": 2.0,
+      "maximum_solver_translation_disagreement_mm": 10.0,
+      "maximum_bootstrap_translation_p95_mm": 10.0,
+      "maximum_depth_consistency_median_mm": 30.0
+    },
+    "rejected_pose_counts": {
+      "left": 4,
+      "right": 0
+    }
+  },
+  "ground_truth_errors": {
+    "left_base": {
+      "translation_mm": 0.7637622110217128,
+      "rotation_deg": 0.05864652558077979
+    },
+    "left_handeye": {
+      "translation_mm": 0.744789029136362,
+      "rotation_deg": 0.05425476231385514
+    },
+    "right_base": {
+      "translation_mm": 0.020327948291603753,
+      "rotation_deg": 0.04403126096102487
+    },
+    "right_handeye": {
+      "translation_mm": 0.3340338156693814,
+      "rotation_deg": 0.04388295842746112
+    },
+    "third_camera": {
+      "translation_mm": 3.0186918110691705,
+      "rotation_deg": 0.29722694166687136
+    }
+  },
+  "depth_validation": "not available in this RGB-only simulated experiment"
+}

@@ -1,0 +1,177 @@
+{
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "generator": "doc/scripts/compose_analysis_figures.py",
+  "canvas_px": [
+    1800,
+    1200
+  ],
+  "reference_design": "doc/scripts/prepare_figures.py",
+  "sources": [
+    {
+      "path": "experiments/BOARD_002_20261024_tutorial30_default/right_04_right_wrist.png",
+      "sha256": "c6d70cecc44da5b9d467efd9fd54f4a49298ebd88e73bf5eaa1e2fba7ae8071f",
+      "crop_xyxy": null
+    },
+    {
+      "path": "experiments/BOARD_002_20261024_tutorial30_default/heldout_example.json",
+      "sha256": "e4a85e22b96b310556cba60b80b6545f7130cc417adca914c9b471dba3c54636",
+      "crop_xyxy": null
+    }
+  ],
+  "pose_id": "right_04",
+  "training_pose_ids": [
+    "right_00",
+    "right_01",
+    "right_02",
+    "right_03",
+    "right_05",
+    "right_06",
+    "right_07",
+    "right_08",
+    "right_10",
+    "right_11",
+    "right_12",
+    "right_13",
+    "right_15",
+    "right_16",
+    "right_17",
+    "right_18",
+    "right_20",
+    "right_21",
+    "right_22",
+    "right_23",
+    "right_25",
+    "right_26",
+    "right_27",
+    "right_28"
+  ],
+  "excluded_pose_ids": [
+    "right_04",
+    "right_09",
+    "right_14",
+    "right_19",
+    "right_24",
+    "right_29"
+  ],
+  "matched_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "pixel_residuals": [
+    0.32392992142739685,
+    0.31769580162693256,
+    0.1953150778838741,
+    0.17895417323800955,
+    0.17267109065577366,
+    0.25947205648345745,
+    0.19937466440968538,
+    0.094121440539302,
+    0.2754516209569151,
+    0.27823248866265443,
+    0.23840015211993562,
+    0.16627509162721538,
+    0.4256063931939233,
+    0.22025545786089257,
+    0.5052152349561448,
+    0.14574962722737192,
+    0.4600156189802527,
+    0.6041880731971203,
+    0.4112664311962408,
+    0.4449721636267321,
+    0.38506090142692667,
+    0.33502834860943564,
+    0.30148152940676953,
+    0.3017931446050536
+  ],
+  "pixel_rms": 0.3260863615380665,
+  "pixel_max": 0.6041880731971203,
+  "pose_error_T_C_P_mm_deg": [
+    0.27392834857797044,
+    0.0346821211005773
+  ],
+  "zoom_details": [
+    {
+      "corner_id": 7,
+      "residual_rank": "Smallest residual",
+      "crop_xyxy": [
+        362,
+        176,
+        374,
+        186
+      ],
+      "magnification": 20,
+      "observed_px": [
+        368.9858703613281,
+        181.86572265625
+      ],
+      "predicted_px": [
+        369.06573486328125,
+        181.91552734375
+      ],
+      "residual_px": 0.094121440539302
+    },
+    {
+      "corner_id": 22,
+      "residual_rank": "Middle-ranked residual",
+      "crop_xyxy": [
+        126,
+        263,
+        138,
+        273
+      ],
+      "magnification": 20,
+      "observed_px": [
+        132.650390625,
+        268.142578125
+      ],
+      "predicted_px": [
+        132.91156005859375,
+        268.2931823730469
+      ],
+      "residual_px": 0.30148152940676953
+    },
+    {
+      "corner_id": 17,
+      "residual_rank": "Largest residual",
+      "crop_xyxy": [
+        142,
+        185,
+        154,
+        195
+      ],
+      "magnification": 20,
+      "observed_px": [
+        148.81625366210938,
+        190.32424926757812
+      ],
+      "predicted_px": [
+        149.417724609375,
+        190.38148498535156
+      ],
+      "residual_px": 0.6041880731971203
+    }
+  ],
+  "zoom_resampling": "nearest; identical affine transform for image and marker centers"
+}

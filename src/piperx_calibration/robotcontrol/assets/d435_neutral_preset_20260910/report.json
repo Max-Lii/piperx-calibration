@@ -1,0 +1,415 @@
+{
+  "reference": "cache&download/iphone17_d435_real_photo/neutral_color_preset/IMG_1880 2_srgb.png",
+  "reference_patch_extraction": {
+    "detection": 0.3328718088608129,
+    "orientation_rotation_quarters": 3,
+    "orientation_rmse": 0.11454414255411192
+  },
+  "reference_table": {
+    "candidate_pixels": 8694802,
+    "kept_pixels": 8544275,
+    "srgb": [
+      0.8392156862745098,
+      0.8352941176470589,
+      0.8509803921568627
+    ]
+  },
+  "method": "Large-area robust patch medians plus hard tabletop white-point anchoring; reflection, text, edge, and outlier pixels rejected",
+  "cameras": {
+    "left_wrist": {
+      "ridge": 1.0,
+      "strength": 0.75,
+      "leave_one_patch_out_chroma_rmse": 0.12290515953742187,
+      "white_balance_gains": [
+        0.9987539922481754,
+        1.0242218402219097,
+        0.7637318714865413
+      ],
+      "matrix": [
+        [
+          0.9382843658322542,
+          0.022239779423139754,
+          -0.03857543517128501
+        ],
+        [
+          -0.08638006332834355,
+          1.0372520121472069,
+          -0.11465703080438246
+        ],
+        [
+          0.14264372519297874,
+          -0.057275717820750256,
+          1.1473343131492142
+        ]
+      ],
+      "source_table_srgb": [
+        0.7411764705882353,
+        0.7294117647058823,
+        0.8470588235294118
+      ],
+      "corrected_table_srgb": [
+        0.8901960784313725,
+        0.8509803921568627,
+        0.8823529411764706
+      ],
+      "target_table_srgb": [
+        0.8392156862745098,
+        0.8352941176470589,
+        0.8509803921568627
+      ],
+      "table_srgb_rmse_before": 0.08334294446690241,
+      "table_srgb_rmse_after": 0.03572719050644819,
+      "patch_chroma_rmse_before": 0.2726787336685795,
+      "patch_chroma_rmse_after": 0.1587571641544559,
+      "frames": {
+        "left_wrist_1.png": {
+          "patch": {
+            "detection": 0.2987492359914023,
+            "orientation_rotation_quarters": 3,
+            "orientation_rmse": 0.11570173074790477
+          },
+          "table": {
+            "candidate_pixels": 19272,
+            "kept_pixels": 18944,
+            "srgb": [
+              0.7411764705882353,
+              0.7294117647058823,
+              0.8470588235294118
+            ]
+          }
+        },
+        "left_wrist_2.png": {
+          "patch": {
+            "detection": 0.2987005192649309,
+            "orientation_rotation_quarters": 3,
+            "orientation_rmse": 0.11552379411967637
+          },
+          "table": {
+            "candidate_pixels": 19439,
+            "kept_pixels": 19139,
+            "srgb": [
+              0.7411764705882353,
+              0.7294117647058823,
+              0.8431372549019608
+            ]
+          }
+        },
+        "left_wrist_3.png": {
+          "patch": {
+            "detection": 0.29852547433987836,
+            "orientation_rotation_quarters": 3,
+            "orientation_rmse": 0.11509442801903043
+          },
+          "table": {
+            "candidate_pixels": 19743,
+            "kept_pixels": 19398,
+            "srgb": [
+              0.7411764705882353,
+              0.7333333333333333,
+              0.8470588235294118
+            ]
+          }
+        },
+        "left_wrist_4.png": {
+          "patch": {
+            "detection": 0.2985376446474453,
+            "orientation_rotation_quarters": 3,
+            "orientation_rmse": 0.1149052373936481
+          },
+          "table": {
+            "candidate_pixels": 19566,
+            "kept_pixels": 19250,
+            "srgb": [
+              0.7411764705882353,
+              0.7294117647058823,
+              0.8470588235294118
+            ]
+          }
+        },
+        "left_wrist_5.png": {
+          "patch": {
+            "detection": 0.2987325935777596,
+            "orientation_rotation_quarters": 3,
+            "orientation_rmse": 0.11525208192165533
+          },
+          "table": {
+            "candidate_pixels": 19473,
+            "kept_pixels": 19186,
+            "srgb": [
+              0.7411764705882353,
+              0.7333333333333333,
+              0.8470588235294118
+            ]
+          }
+        }
+      },
+      "cube_lut": "left_wrist_neutral_preset_33.cube",
+      "npz_lut": "left_wrist_neutral_preset_lut.npz"
+    },
+    "third_view": {
+      "ridge": 0.03,
+      "strength": 0.75,
+      "leave_one_patch_out_chroma_rmse": 0.12563886939076518,
+      "white_balance_gains": [
+        0.9886510987666672,
+        1.0251746041457026,
+        0.7840429296011082
+      ],
+      "matrix": [
+        [
+          0.7289018720389305,
+          0.07268442279450155,
+          0.0782764933780598
+        ],
+        [
+          0.14947598920330896,
+          0.9563649306145103,
+          -0.00790572964157023
+        ],
+        [
+          0.11938611861528288,
+          -0.02859594943000101,
+          0.9317220805363932
+        ]
+      ],
+      "source_table_srgb": [
+        0.7568627450980392,
+        0.7411764705882353,
+        0.8509803921568627
+      ],
+      "corrected_table_srgb": [
+        0.8784313725490196,
+        0.8588235294117647,
+        0.8901960784313725
+      ],
+      "target_table_srgb": [
+        0.8392156862745098,
+        0.8352941176470589,
+        0.8509803921568627
+      ],
+      "table_srgb_rmse_before": 0.07220373584126263,
+      "table_srgb_rmse_after": 0.034782051491895574,
+      "patch_chroma_rmse_before": 0.31842749480226384,
+      "patch_chroma_rmse_after": 0.13669147902679804,
+      "frames": {
+        "third_view_1.png": {
+          "patch": {
+            "detection": 0.13111583063142268,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.09921115833554975
+          },
+          "table": {
+            "candidate_pixels": 50764,
+            "kept_pixels": 50660,
+            "srgb": [
+              0.7568627450980392,
+              0.7372549019607844,
+              0.8470588235294118
+            ]
+          }
+        },
+        "third_view_2.png": {
+          "patch": {
+            "detection": 0.12954095709374724,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.09831853084214218
+          },
+          "table": {
+            "candidate_pixels": 50109,
+            "kept_pixels": 50032,
+            "srgb": [
+              0.7568627450980392,
+              0.7411764705882353,
+              0.8509803921568627
+            ]
+          }
+        },
+        "third_view_3.png": {
+          "patch": {
+            "detection": 0.12961613125001947,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.0983373294865679
+          },
+          "table": {
+            "candidate_pixels": 49939,
+            "kept_pixels": 49839,
+            "srgb": [
+              0.7568627450980392,
+              0.7372549019607844,
+              0.8509803921568627
+            ]
+          }
+        },
+        "third_view_4.png": {
+          "patch": {
+            "detection": 0.1314894794281918,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.0959374066456102
+          },
+          "table": {
+            "candidate_pixels": 49537,
+            "kept_pixels": 49426,
+            "srgb": [
+              0.7568627450980392,
+              0.7411764705882353,
+              0.8509803921568627
+            ]
+          }
+        },
+        "third_view_5.png": {
+          "patch": {
+            "detection": 0.1314845896379017,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.09455306556800118
+          },
+          "table": {
+            "candidate_pixels": 48992,
+            "kept_pixels": 48878,
+            "srgb": [
+              0.7568627450980392,
+              0.7411764705882353,
+              0.8509803921568627
+            ]
+          }
+        }
+      },
+      "cube_lut": "third_view_neutral_preset_33.cube",
+      "npz_lut": "third_view_neutral_preset_lut.npz"
+    },
+    "right_wrist": {
+      "ridge": 1.0,
+      "strength": 0.25,
+      "leave_one_patch_out_chroma_rmse": 0.12956375206227397,
+      "white_balance_gains": [
+        0.8525432787590376,
+        1.061553528345244,
+        0.8244628180513879
+      ],
+      "matrix": [
+        [
+          1.0283599584216196,
+          0.0015884333600289643,
+          -0.09924341689098393
+        ],
+        [
+          -0.10207461097701549,
+          1.0366142773353555,
+          -0.06212560743120042
+        ],
+        [
+          0.07040016956163671,
+          -0.036650585362650506,
+          1.1557537756587763
+        ]
+      ],
+      "source_table_srgb": [
+        0.803921568627451,
+        0.7254901960784313,
+        0.8274509803921568
+      ],
+      "corrected_table_srgb": [
+        0.9254901960784314,
+        0.8627450980392157,
+        0.9098039215686274
+      ],
+      "target_table_srgb": [
+        0.8392156862745098,
+        0.8352941176470589,
+        0.8509803921568627
+      ],
+      "table_srgb_rmse_before": 0.06796128591663249,
+      "table_srgb_rmse_after": 0.062335262836948326,
+      "patch_chroma_rmse_before": 0.23285086115210973,
+      "patch_chroma_rmse_after": 0.17125484101816435,
+      "frames": {
+        "right_wrist_1.png": {
+          "patch": {
+            "detection": 0.06592928902320092,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.12051723261906341
+          },
+          "table": {
+            "candidate_pixels": 55434,
+            "kept_pixels": 55336,
+            "srgb": [
+              0.803921568627451,
+              0.7254901960784313,
+              0.8274509803921568
+            ]
+          }
+        },
+        "right_wrist_2.png": {
+          "patch": {
+            "detection": 0.0594508395581431,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.12121355650866637
+          },
+          "table": {
+            "candidate_pixels": 57144,
+            "kept_pixels": 56993,
+            "srgb": [
+              0.803921568627451,
+              0.7254901960784313,
+              0.8274509803921568
+            ]
+          }
+        },
+        "right_wrist_3.png": {
+          "patch": {
+            "detection": 0.06577281231198671,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.12119058837794304
+          },
+          "table": {
+            "candidate_pixels": 56760,
+            "kept_pixels": 56619,
+            "srgb": [
+              0.803921568627451,
+              0.7254901960784313,
+              0.8274509803921568
+            ]
+          }
+        },
+        "right_wrist_4.png": {
+          "patch": {
+            "detection": 0.07121915108729739,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.12085592023548233
+          },
+          "table": {
+            "candidate_pixels": 57179,
+            "kept_pixels": 56585,
+            "srgb": [
+              0.803921568627451,
+              0.7254901960784313,
+              0.8235294117647058
+            ]
+          }
+        },
+        "right_wrist_5.png": {
+          "patch": {
+            "detection": 0.06223622426360779,
+            "orientation_rotation_quarters": 0,
+            "orientation_rmse": 0.12129530573809771
+          },
+          "table": {
+            "candidate_pixels": 56871,
+            "kept_pixels": 56728,
+            "srgb": [
+              0.807843137254902,
+              0.7254901960784313,
+              0.8274509803921568
+            ]
+          }
+        }
+      },
+      "cube_lut": "right_wrist_neutral_preset_33.cube",
+      "npz_lut": "right_wrist_neutral_preset_lut.npz"
+    }
+  },
+  "cross_camera_patch_chroma_std": {
+    "before": 0.0855437454820472,
+    "after": 0.035273580702022175,
+    "improvement_percent": 58.76544742897079
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "generator": "doc/scripts/capture_replay_ui.py",
+  "capture_stage": "A4_PLACEMENT",
+  "canvas_px": [1600, 1266],
+  "source": {
+    "path": "experiments/BOARD_002_20261024_tutorial30_default/ui/04-placement.png",
+    "sha256": "e1b9c6c2ef226b34abf89702d7a693d3a8be51a96ab62ea004e6885c4ca34845",
+    "crop_xyxy": null
+  },
+  "state_path": "experiments/BOARD_002_20261024_tutorial30_default/ui/04-placement.json",
+  "browser_viewport_px": [1600, 900],
+  "full_page": true,
+  "screenshot_state_edited": false
+}

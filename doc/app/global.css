@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+@import 'katex/dist/katex.min.css';
+body { margin: 0; font-family: ui-sans-serif, system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; }
+/* Fumadocs' mobile header includes a sidebar trigger even when its sidebar is disabled. */
+#nd-subnav [aria-controls="nd-sidebar-mobile"] { display: none; }
+.prose { line-height: 1.85; }
+.prose > p, .prose li > p, .prose details > p {
+  text-align: justify;
+  text-align-last: start;
+  text-justify: auto;
+}
+/* Reserve room for short labels; let explanations wrap in the final column. */
+.prose :is(.reference-table, .intrinsics-table) { min-width: 0; max-width: 100%; }
+.prose :is(.reference-table, .intrinsics-table) table {
+  width: 100%;
+  min-width: 42rem;
+  table-layout: fixed;
+}
+.prose .reference-table :is(th, td):nth-child(1) { width: 23%; }
+.prose .reference-table :is(th, td):nth-child(2) { width: 15%; }
+.prose .intrinsics-table :is(th, td):nth-child(1) { width: 24%; }
+.prose .intrinsics-table :is(th, td):nth-child(2) { width: 18%; }
+.prose :is(.reference-table, .intrinsics-table) th,
+.prose :is(.reference-table, .intrinsics-table) td:nth-child(2) {
+  white-space: nowrap;
+}
+.prose .intrinsics-table td:first-child { white-space: nowrap; }
+.prose :is(.reference-table, .intrinsics-table) td:last-child {
+  overflow-wrap: anywhere;
+}
+.tutorial-toolbar { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.language-switch { display: flex; gap: 0.25rem; font-size: 0.85rem; }
+.language-switch a { padding: 0.3rem 0.65rem; border-radius: 0.4rem; color: var(--color-fd-muted-foreground); }
+.language-switch a[aria-current="page"] { background: var(--color-fd-muted); color: var(--color-fd-foreground); }
+.language-switch a:hover { color: var(--color-fd-foreground); background: var(--color-fd-muted); }
+.prose figure img { height: auto; max-width: 100%; border-radius: 0.5rem; }
+.image-trigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.image-trigger:focus-visible { outline: 2px solid var(--color-fd-ring); outline-offset: 3px; border-radius: 0.5rem; }
+.image-lightbox { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 2rem; background: rgb(0 0 0 / 0.78); }
+.image-lightbox-panel { position: relative; max-width: min(96vw, 1400px); max-height: 94vh; overflow: auto; padding: 1rem; border-radius: 0.75rem; background: var(--color-fd-background); box-shadow: 0 1rem 4rem rgb(0 0 0 / 0.35); }
+.image-lightbox-panel img { display: block; max-width: 100%; max-height: 82vh; width: auto; height: auto; margin: auto; }
+.image-lightbox-panel p { max-width: 70rem; margin: 0.75rem auto 0; color: var(--color-fd-muted-foreground); font-size: 0.85rem; }
+.image-lightbox-close { position: sticky; top: 0; float: right; z-index: 1; width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: var(--color-fd-muted); color: var(--color-fd-foreground); font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.prose figcaption { text-align: center; color: var(--color-fd-muted-foreground); font-size: 0.875rem; }
+.prose details.observation-data { margin-block: 1.5rem; padding: 0.85rem 1.1rem; border: 1px solid var(--color-fd-border); border-radius: 0.6rem; background: var(--color-fd-card); }
+.observation-data > summary { cursor: pointer; font-weight: 600; line-height: 1.6; }
+.observation-data > summary:focus-visible { outline: 2px solid var(--color-fd-ring); outline-offset: 4px; }
+.observation-data[open] > summary { margin-bottom: 1rem; }
+.figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-block: 2rem; }
+.figure-grid figure { min-width: 0; margin: 0; }
+.prose .process-flow { display: grid; list-style: none; padding: 0; gap: 0.75rem; margin-block: 1.5rem; }
+.prose .process-flow li { display: flex; gap: 0.85rem; align-items: flex-start; margin: 0; padding: 1rem; border: 1px solid var(--color-fd-border); border-radius: 0.6rem; background: var(--color-fd-card); }
+.process-number { display: grid; place-items: center; flex: 0 0 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--color-fd-muted); color: var(--color-fd-foreground); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.prose .process-flow p { margin: 0.25rem 0 0; color: var(--color-fd-muted-foreground); font-size: 0.9rem; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding-block: 0.5rem; }
+.code-copy { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem; font-size: 0.75rem; border-radius: 0.3rem; cursor: pointer; color: var(--color-fd-muted-foreground); }
+.code-copy:hover { background: var(--color-fd-accent); color: var(--color-fd-foreground); }
+.manual-copy { padding: 1rem; font-size: 0.8rem; }
+.manual-copy textarea { display: block; width: 100%; height: 8rem; margin-top: 0.5rem; font-family: monospace; }
+@media (max-width: 640px) { .figure-grid { grid-template-columns: minmax(0, 1fr); } }
+.mermaid-diagram { margin-block: 1.5rem; overflow-x: auto; border: 1px solid var(--color-fd-border); border-radius: 0.75rem; padding: 1rem; background: var(--color-fd-card); }
+.mermaid-diagram svg { display: block; width: min(100%, 960px); height: auto; margin: auto; }
+.mermaid-fallback { white-space: pre-wrap; }

@@ -1,0 +1,15 @@
+{
+  "description": "Original frame illustrations verified byte-for-byte against the retained local source before standalone publication. Original source paths record provenance; validation uses the hashes below.",
+  "files": [
+    {
+      "path": "images/piper_coordinate_frames_figure.png",
+      "sha256": "6f63742f2267c41578e87906a988325269b93f0d983e60c8db147786b597457b",
+      "original_source": "temp/latex_doc/figures/sim2real_gap/piper_coordinate_frames_figure.png"
+    },
+    {
+      "path": "images/piper_shared_world_and_charuco_65_35.png",
+      "sha256": "d86fc79a90f1dfecf9c3dff37ea425a8285e6ba42ff22a5656a6e30f550554a6",
+      "original_source": "temp/latex_doc/figures/sim2real_gap/piper_shared_world_and_charuco_65_35.png"
+    }
+  ]
+}

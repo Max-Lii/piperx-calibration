@@ -1,0 +1,15 @@
+{
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "generator": "doc/scripts/capture_replay_ui.py",
+  "capture_stage": "REVIEW_AND_EXPORT",
+  "canvas_px": [1600, 900],
+  "source": {
+    "path": "experiments/BOARD_002_20261024_tutorial30_default/ui/08-review.png",
+    "sha256": "5e7f4e2b998abc5e81c069aa30a9407c21039a1a5ed8eac35a23c3fad42ad654",
+    "crop_xyxy": null
+  },
+  "state_path": "experiments/BOARD_002_20261024_tutorial30_default/ui/08-review.json",
+  "browser_viewport_px": [1600, 900],
+  "full_page": true,
+  "screenshot_state_edited": false
+}

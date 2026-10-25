@@ -1,0 +1,33 @@
+# Copy outside the repository (for example /etc/vla/motion_smoke.yaml), then
+# replace every value after supervised verification of the physical Home pose.
+# This example is intentionally dry-run only; it cannot be executed without
+# --execute --confirm-physical-clearance.
+service_url: http://127.0.0.1:8008
+owner_id: supervised-first-motion
+
+# Measured 14-D execution-arm state at a clear, manually verified Home pose.
+# [left j1..j6, left gripper, right j1..j6, right gripper]
+expected_home: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+home_tolerance_rad: 0.02
+timeout_s: 20
+
+# Do not change more than one joint per probe. The harness rejects deltas above
+# 0.03 rad (about 1.7 degrees). Verify direction and clearance manually first.
+probes:
+  - name: left_joint_1_positive
+    action_index: 0
+    delta_rad: 0.02
+  - name: right_joint_1_positive
+    action_index: 7
+    delta_rad: 0.02
+
+# These are action-space values, not assumed physical units. Fill them only
+# after reading the physical gripper convention and verifying both targets in
+# empty air. The cycle is opt-in via --include-gripper-cycle.
+grippers:
+  left:
+    open_action_value: 1.0
+    closed_action_value: 0.0
+  right:
+    open_action_value: 1.0
+    closed_action_value: 0.0

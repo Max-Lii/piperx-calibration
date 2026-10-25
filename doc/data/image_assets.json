@@ -1,0 +1,110 @@
+{
+  "/images/piper_coordinate_frames_figure.webp": {
+    "width": 2600,
+    "height": 1160,
+    "source": "doc/source-images/piper_coordinate_frames_figure.png",
+    "source_sha256": "6f63742f2267c41578e87906a988325269b93f0d983e60c8db147786b597457b",
+    "webp_sha256": "1c302cd27a31cbeedbc52c27f31ae31384c6b78768f698510f5b3bc3300f61bb",
+    "source_bytes": 288020,
+    "webp_bytes": 141280
+  },
+  "/images/piper_shared_world_and_charuco_65_35.webp": {
+    "width": 3600,
+    "height": 1980,
+    "source": "doc/source-images/piper_shared_world_and_charuco_65_35.png",
+    "source_sha256": "d86fc79a90f1dfecf9c3dff37ea425a8285e6ba42ff22a5656a6e30f550554a6",
+    "webp_sha256": "22d32bdf6d4f43b4f88e78b9d28246d89414e855f8f8f18df26048bd1cdb2280",
+    "source_bytes": 489585,
+    "webp_bytes": 252510
+  },
+  "/images/board002_pose_diversity.webp": {
+    "width": 2600,
+    "height": 1610,
+    "source": "doc/source-images/board002_pose_diversity.png",
+    "source_sha256": "6656ca9afb559e19225e914b0d1e3e39f783cca14062946c87f43b9db8d08515",
+    "webp_sha256": "f4e2272421c057c1306cad88613d65d198c054b68d8a0607c010c33c69523889",
+    "source_bytes": 597518,
+    "webp_bytes": 270246
+  },
+  "/images/board002_right05_correspondences.webp": {
+    "width": 1800,
+    "height": 1120,
+    "source": "doc/source-images/board002_right05_correspondences.png",
+    "source_sha256": "7f4242a706e4f5d15749d1296fc7c546b80ce94cc03c3fd5b7852b4180cfcf3e",
+    "webp_sha256": "80adb112e5f894afe806c90dba2b6296cbd89a1e58847921650c7df1bc6ce4d8",
+    "source_bytes": 308634,
+    "webp_bytes": 151032
+  },
+  "/images/board002_right04_heldout.webp": {
+    "width": 1800,
+    "height": 1200,
+    "source": "doc/source-images/board002_right04_heldout.png",
+    "source_sha256": "5308a1c15e8c44595c24859d2a5375c19de0282a67b66940916efa37a1742f20",
+    "webp_sha256": "814b39dc7573616827bbfb20224e3753fd1c023ca01d2fb0afe2dfd9caa7c5ca",
+    "source_bytes": 356987,
+    "webp_bytes": 126124
+  },
+  "/images/home_right_camera.webp": {
+    "width": 640,
+    "height": 480,
+    "source": "doc/experiments/BOARD_002_20261024_tutorial30_default/home_right_camera.png",
+    "source_sha256": "c0b516f980ef682af60df5ea5e73702eb1fb4de601f62f81fbf09cfe0830591b",
+    "webp_sha256": "34793a73ac7c13157ccda930cf510756efa4ec747b18f1edd6efcbeb319d965a",
+    "source_bytes": 6256,
+    "webp_bytes": 950
+  },
+  "/images/right_05_right_wrist.webp": {
+    "width": 640,
+    "height": 480,
+    "source": "doc/experiments/BOARD_002_20261024_tutorial30_default/right_05_right_wrist.png",
+    "source_sha256": "8f52e74184aa089b3451cb5fbb3a67e4902c00a8df086cf91cafd13555da1967",
+    "webp_sha256": "4ec0865039b10fdee7165d2656a4d83a29954bf6d7f17cc167ec8e26ccc1d8f5",
+    "source_bytes": 23227,
+    "webp_bytes": 4412
+  },
+  "/images/right_00_observer.webp": {
+    "width": 640,
+    "height": 480,
+    "source": "doc/experiments/BOARD_002_20261024_tutorial30_default/right_00_observer.png",
+    "source_sha256": "838095e783d89273a44157c104fb17744ad3bf6a56c39d12662e98d295ca6f14",
+    "webp_sha256": "c4b8683f6ec3b6d223433876d8d7d85b47901da28f2ab0ced0609b72f1b3bac7",
+    "source_bytes": 25019,
+    "webp_bytes": 7604
+  },
+  "/images/01-device.webp": {
+    "width": 1600,
+    "height": 900,
+    "source": "doc/experiments/BOARD_002_20261024_tutorial30_default/ui/01-device.png",
+    "source_sha256": "70ce316e2ea04da976b2ba3c5cb0a22617e149f24818e84b6f4e9694e91b28c5",
+    "webp_sha256": "49141b7b5edfc31e888a833e6de2a51ef42ee8a245bdfb602a41fa61d306ffd6",
+    "source_bytes": 172654,
+    "webp_bytes": 85974
+  },
+  "/images/board002_ui_placement.webp": {
+    "width": 1600,
+    "height": 1266,
+    "source": "doc/experiments/BOARD_002_20261024_tutorial30_default/ui/04-placement.png",
+    "source_sha256": "e1b9c6c2ef226b34abf89702d7a693d3a8be51a96ab62ea004e6885c4ca34845",
+    "webp_sha256": "7bd91fc6d5b98e7ef5621a43afd4c68715d3ef9296d0288149d05f8838f51f01",
+    "source_bytes": 225634,
+    "webp_bytes": 113916
+  },
+  "/images/board002_ui_acquisition.webp": {
+    "width": 1600,
+    "height": 1326,
+    "source": "doc/experiments/BOARD_002_20261024_tutorial30_default/ui/06-capture-right.png",
+    "source_sha256": "5a374db9fc2528f88500fee8bcd9794e9a0978ed9f071ee0cf12cc8e45dbcfba",
+    "webp_sha256": "33fd4c7ad97f4a1ff6cd0a3582240d2b58c4ed02b67bcf254ca969ba1cb637a6",
+    "source_bytes": 226248,
+    "webp_bytes": 119376
+  },
+  "/images/board002_ui_review.webp": {
+    "width": 1600,
+    "height": 900,
+    "source": "doc/experiments/BOARD_002_20261024_tutorial30_default/ui/08-review.png",
+    "source_sha256": "5e7f4e2b998abc5e81c069aa30a9407c21039a1a5ed8eac35a23c3fad42ad654",
+    "webp_sha256": "8c69efa53e5c6576c572feb69905260ae3fafb0ba75cb68e83134ef2aeca6735",
+    "source_bytes": 149781,
+    "webp_bytes": 79056
+  }
+}

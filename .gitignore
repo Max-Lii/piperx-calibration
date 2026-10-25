@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+third_party/
+runtime/
+
+# Local development history and generated validation output
+/temp/
+/migration_snapshot.json
+/doc/validation/
+/doc/quality-check.json
+.venv/
+.env
+.env.*
+!.env.example
+*.local.yaml
+*.local.yml
+.DS_Store

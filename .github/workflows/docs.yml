@@ -1,0 +1,53 @@
+name: Documentation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['doc/**', '.github/workflows/docs.yml']
+  pull_request:
+    paths: ['doc/**', '.github/workflows/docs.yml']
+permissions:
+  contents: read
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: doc
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: doc/package-lock.json
+      - run: npm ci
+      - run: npm run types:check
+      - run: npm run build
+      - name: Check exported routes and asset paths
+        run: python3 scripts/check_static_export.py
+      - name: Report static deployment and script sizes
+        run: python3 scripts/report_bundle.py
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: doc/out
+          retention-days: 1
+  deploy:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && vars.PAGES_ENABLED == 'true'))
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,21 @@
+# Start a protocol-compatible simulated robotcontrol service (or a RoboTwin
+# backend) on port 8009 before this calibration service.  This profile is only
+# for simulation; real hardware uses config.robot_host.yaml with mode: http.
+server:
+  host: 0.0.0.0
+  port: 8010
+workcell:
+  mode: robotwin
+  robotcontrol_url: http://127.0.0.1:8009
+storage:
+  session_root: runtime/robotwin_sessions
+frontend:
+  dist: ../../../frontend/dist
+camera:
+  preview_fps: 8.0
+target:
+  settle_s: 0.6
+  manifest: ../../../assets/targets/BOARD_002_A4_Charuco_5x7_35mm_metric.json
+geometry:
+  pose_library: ../../../assets/pose_libraries/robotwin_dual_tabletop_BOARD_002_48x2_pose_libraries.json
+  poses_per_arm: 48

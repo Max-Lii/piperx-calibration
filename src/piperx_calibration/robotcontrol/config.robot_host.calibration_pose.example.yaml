@@ -1,0 +1,34 @@
+# Temporary, supervised placement-pose acceptance configuration for the
+# current Piper-X workcell. Copy to a host-local path; do not commit the copy.
+server:
+  host: 127.0.0.1
+  port: 8008
+lease:
+  ttl_s: 15.0
+connection:
+  idle_disconnect_s: 60.0
+driver:
+  kind: piper_x_motion
+  left_can: can_left
+  right_can: can_right
+  firmware_profile: v188
+  interface: socketcan
+  motion_speed_percent: 20
+  # No 5-degree first-motion cap: allow only the specifically bounded
+  # single-arm RoboTwin placement candidate below.
+  allow_calibration_pose_motion: true
+  joint_limits_rad:
+    - [-0.75, 0.55]
+    - [-0.50, 0.50]
+    - [-0.75, 0.50]
+    - [-0.25, 1.15]
+    - [-0.30, 0.30]
+    - [-0.50, 0.50]
+safety:
+  joint_limit_rad: 2.8
+  safe_home: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+camera:
+  kind: mock
+auth:
+  mode: disabled
+  api_key_env: ROBOTCONTROL_API_KEY

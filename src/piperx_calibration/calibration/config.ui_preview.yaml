@@ -1,0 +1,20 @@
+# Browser-only preview. It never connects to CAN, Piper-X, or a RealSense.
+server:
+  host: 0.0.0.0
+  port: 8010
+workcell:
+  mode: mock
+  robotcontrol_url: http://127.0.0.1:8008
+storage:
+  session_root: runtime/ui_preview_sessions
+frontend:
+  dist: ../../../frontend/dist
+camera:
+  preview_fps: 8.0
+  preview_backend: robotwin
+target:
+  settle_s: 0.6
+  manifest: ../../../assets/targets/BOARD_002_A4_Charuco_5x7_35mm_metric.json
+geometry:
+  pose_library: ../../../assets/pose_libraries/robotwin_dual_tabletop_BOARD_002_48x2_pose_libraries.json
+  poses_per_arm: 48

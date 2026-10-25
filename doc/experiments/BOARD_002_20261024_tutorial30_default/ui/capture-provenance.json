@@ -1,0 +1,16 @@
+{
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "date": "2026-10-24",
+  "frame_delay_s": 1.0,
+  "physical_control_client_created": false,
+  "recomputed_sources": [
+    "wrist RGB + K + measured FK",
+    "fixed third-view RGB + K"
+  ],
+  "source_sha256": {
+    "doc/scripts/replay_tutorial.py": "34f93324d3f5a2ce28ffd2703453b56d3604a1fc19d14237ddcb7d8d624866b2",
+    "doc/scripts/capture_replay_ui.py": "adf65e8a26b30d41508300e8f5e9dba1468eee73460d13e9bd4755dedcec793c",
+    "frontend/src/OperatorApp.tsx": "dce2e9eeaddbc6772adf6c6c95c34bb926324bdcda1850813827f044dccd95b9",
+    "frontend/dist/index.html": "e1610e38d6e346369efb9f21362afb76dd865917f71d67f36d600dbc970b2137"
+  }
+}

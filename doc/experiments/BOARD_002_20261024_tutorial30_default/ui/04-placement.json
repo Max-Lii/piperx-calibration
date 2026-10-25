@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "session_id": "calibration_2026-10-24T175957.953931+0000_74d0b08d",
+  "revision": 7,
+  "mode": "mock",
+  "stage": "A4_PLACEMENT",
+  "status": "running",
+  "created_at": "2026-10-24T17:59:57.954103+00:00",
+  "updated_at": "2026-10-24T18:00:00.730053+00:00",
+  "instruction": "Inspect the fixed target in the recorded third view; no robot moves here.",
+  "active_camera": "third_view",
+  "devices": [
+    {
+      "device_id": "left_arm",
+      "label": "\u5de6\u673a\u68b0\u81c2",
+      "kind": "robot",
+      "connected": true,
+      "healthy": true,
+      "detail": "OFFLINE: recorded simulation; no hardware connected"
+    },
+    {
+      "device_id": "right_arm",
+      "label": "\u53f3\u673a\u68b0\u81c2",
+      "kind": "robot",
+      "connected": true,
+      "healthy": true,
+      "detail": "OFFLINE: recorded simulation; no hardware connected"
+    },
+    {
+      "device_id": "left_wrist",
+      "label": "\u5de6\u8155\u76f8\u673a",
+      "kind": "camera",
+      "connected": true,
+      "healthy": true,
+      "detail": "OFFLINE: recorded simulation; no hardware connected"
+    },
+    {
+      "device_id": "third_view",
+      "label": "\u7b2c\u4e09\u89c6\u89d2\u76f8\u673a",
+      "kind": "camera",
+      "connected": true,
+      "healthy": true,
+      "detail": "OFFLINE: recorded simulation; no hardware connected"
+    },
+    {
+      "device_id": "right_wrist",
+      "label": "\u53f3\u8155\u76f8\u673a",
+      "kind": "camera",
+      "connected": true,
+      "healthy": true,
+      "detail": "OFFLINE: recorded simulation; no hardware connected"
+    }
+  ],
+  "progress": {
+    "current": 0,
+    "total": 0,
+    "label": ""
+  },
+  "robot_holding": true,
+  "recovery_required": false,
+  "warnings": [],
+  "errors": [],
+  "results": {},
+  "artifacts": {
+    "offline_replay": {
+      "run_id": "BOARD_002_20261024_tutorial30_default",
+      "poses_per_arm": 30,
+      "depth_recorded": false
+    },
+    "board_verification": {
+      "accepted": true,
+      "virtual": true,
+      "valid_images": 0,
+      "total_images": 0,
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "verification_method": "recorded_simulation_manifest"
+    }
+  },
+  "stage_ready": true,
+  "processed_command_ids": [
+    "edf5a98a-4404-4e08-9f49-c6d224fac69d",
+    "e1d29288-ddf1-4479-8672-9ce5e38252d8",
+    "bd98734a-7f8a-4aa0-b21f-8243ed1e4be3"
+  ]
+}

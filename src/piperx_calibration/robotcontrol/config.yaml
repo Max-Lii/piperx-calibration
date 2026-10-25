@@ -1,0 +1,29 @@
+# Development-safe defaults. Real CAN/D435 identifiers and secrets belong only
+# in a host-local override file on the robot computer, never in this repository.
+server:
+  host: 127.0.0.1
+  port: 8008
+lease:
+  ttl_s: 15.0
+connection:
+  idle_disconnect_s: 60.0
+driver:
+  kind: mock  # mock | piper_x_readonly | piper_x_motion
+safety:
+  joint_limit_rad: 2.8
+  safe_home: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+camera:
+  kind: mock  # mock | realsense
+  enabled_roles: [left_wrist, right_wrist, third_view]
+  depth_enabled: true
+  lock_auto_controls_after_warmup: false
+  image_processing:
+    enabled: false
+    backend: cpu  # cpu | cuda | auto
+    device: cuda:0
+    pinned_memory: false
+    torch_compile: true  # compile and warm the fixed camera shape before serving
+    jpeg_quality: 90
+auth:
+  mode: disabled  # remote deployment: api_key loaded from host-local environment
+  api_key_env: ROBOTCONTROL_API_KEY

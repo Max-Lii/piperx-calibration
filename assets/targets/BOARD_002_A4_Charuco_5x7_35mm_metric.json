@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "target_id": "BOARD_002",
+  "page_mm": [
+    210.0,
+    297.0
+  ],
+  "page_orientation": "portrait",
+  "dpi": 600,
+  "dictionary": "DICT_4X4_50",
+  "squares_x": 5,
+  "squares_y": 7,
+  "square_length_mm": 35.0,
+  "marker_length_mm": 26.25,
+  "board_size_mm": [
+    175.0,
+    245.0
+  ],
+  "board_top_left_from_page_top_left_mm": [
+    8.0,
+    26.0
+  ],
+  "alignment_x_center_from_page_top_left_mm": [
+    196.5,
+    148.5
+  ],
+  "alignment_x_size_mm": 14.0,
+  "alignment_x_stroke_mm": 2.5,
+  "alignment_x_relative_to_board_top_left_mm": [
+    188.5,
+    122.5
+  ],
+  "print_instruction": "A4 portrait; Actual size / 100%; disable Fit, Shrink, Scale to page, and borderless enlargement.",
+  "pdf_sha256": "5bbe8d1c54d9df0414a4a500ab040f8a5115272e4fd4955e1871f97438e701f3",
+  "content_scale_x": 1.0,
+  "content_scale_y": 1.0,
+  "metric_fiducials": {
+    "dictionary": "DICT_4X4_50",
+    "marker_size_mm": 12.0,
+    "marker_border_mm": 2.0,
+    "markers": {
+      "40": [
+        2.0,
+        3.0
+      ],
+      "41": [
+        192.0,
+        3.0
+      ],
+      "42": [
+        2.0,
+        279.0
+      ],
+      "43": [
+        192.0,
+        279.0
+      ]
+    },
+    "purpose": "page registration and print-warp diagnostics; absolute scale still uses measured A4 edges"
+  }
+}

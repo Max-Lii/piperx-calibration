@@ -1,0 +1,22 @@
+{
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "generator": "doc/scripts/capture_replay_ui.py",
+  "capture_stage": "CAPTURE_RIGHT",
+  "capture_pose_id": "right_05",
+  "canvas_px": [1600, 1326],
+  "source": {
+    "path": "experiments/BOARD_002_20261024_tutorial30_default/ui/06-capture-right.png",
+    "sha256": "5a374db9fc2528f88500fee8bcd9794e9a0978ed9f071ee0cf12cc8e45dbcfba",
+    "crop_xyxy": null
+  },
+  "state_path": "experiments/BOARD_002_20261024_tutorial30_default/ui/06-capture-right.json",
+  "browser_viewport_px": [1600, 900],
+  "full_page": true,
+  "recorded_state": {
+    "arm_pose_index": 6,
+    "overall_progress": "36/60",
+    "corner_count": 19,
+    "accepted": true
+  },
+  "screenshot_state_edited": false
+}

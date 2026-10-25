@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "piperx-calibration"
+version = "0.1.0.dev0"
+description = "Piper-X workcell calibration and robotcontrol reference implementation"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi==0.115.12",
+  "httpx==0.28.1",
+  "numpy==1.26.4",
+  "opencv-python==4.11.0.86",
+  "pydantic>=2.10,<3",
+  "pyyaml>=6.0,<7",
+  "scipy==1.17.1",
+  "toppra==0.6.3",
+  "contourpy==1.3.3",
+  "uvicorn[standard]==0.34.2",
+]
+
+[project.optional-dependencies]
+hardware = [
+  "python-can==4.5.0",
+  "pyrealsense2==2.56.5.9235",
+]
+test = ["pytest==8.3.5"]
+simulation = ["Pillow>=10,<12", "sapien==3.0.1", "huggingface-hub>=0.34,<1", "setuptools<81"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/piperx_calibration", "sim"]
+addopts = "-ra"
+
+[tool.setuptools.package-data]
+piperx_calibration = ["calibration/*.yaml", "robotcontrol/*.yaml"]

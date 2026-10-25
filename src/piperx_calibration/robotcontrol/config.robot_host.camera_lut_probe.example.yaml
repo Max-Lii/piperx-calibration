@@ -1,0 +1,38 @@
+# Camera-only lab probe. It starts three D435 pipelines and LUT output without
+# opening CAN or constructing a physical Piper-X driver.
+server:
+  host: 127.0.0.1
+  port: 8011
+lease:
+  ttl_s: 15.0
+connection:
+  idle_disconnect_s: 60.0
+driver:
+  kind: mock
+safety:
+  joint_limit_rad: 2.8
+  safe_home: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+camera:
+  kind: realsense
+  width: 640
+  height: 480
+  fps: 30
+  enabled_roles: [left_wrist, right_wrist, third_view]
+  depth_enabled: true
+  warmup_frames: 90
+  lock_auto_controls_after_warmup: true
+  serial_by_role:
+    left_wrist: "152222073577"
+    right_wrist: "405622073940"
+    third_view: "102422071735"
+  image_processing:
+    # Retained as a camera-control probe; color LUT processing is retired.
+    enabled: false
+    backend: auto
+    device: cuda:1
+    pinned_memory: true
+    torch_compile: true  # compile and warm the fixed camera shape before serving
+    jpeg_quality: 90
+auth:
+  mode: disabled
+  api_key_env: ROBOTCONTROL_API_KEY

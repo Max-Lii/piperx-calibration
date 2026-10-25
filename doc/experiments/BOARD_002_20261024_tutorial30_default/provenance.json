@@ -1,0 +1,21 @@
+{
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "date": "2026-10-24",
+  "gpu": "CUDA_VISIBLE_DEVICES=0",
+  "renderer": "default",
+  "near_m": 0.01,
+  "pose_library_sha256": "538dda268f7403dc91b049ad7d437e9371ed4130afa8385f55b8dcae8d5fd70c",
+  "poses_per_arm": 30,
+  "sequence": "left then right; non-acquiring arm parked; board fixed",
+  "URDF_sha256": {
+    "left": "4513cf1da1ceed6b0326d3906b05fc3e3b49ee73e72260a98f7077ac12d90a2b",
+    "right": "74835c62f8fba6bb24948a1d55524f4c61eb3138a7a7c582aabc30cbb81e771f"
+  },
+  "camera_config_sha256": {
+    "left": "dc03b925de138304bc07387358adb0f73824bb0955a34cffb8c6665c5e0c330b",
+    "right": "93b48937e5e585968d5146bc298c2eda9a61a721c0603a77c0c311843591c5f0"
+  },
+  "source_sha256": "b2f003276b8812cd7e8cb96cee82310014dba479080e3d0b4ad9a84ba34619d4",
+  "depth_recorded": false,
+  "historical_note": "New experiment. It does not overwrite the older 30+30 result in doc/data."
+}

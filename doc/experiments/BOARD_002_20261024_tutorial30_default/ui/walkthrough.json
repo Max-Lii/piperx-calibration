@@ -1,0 +1,114 @@
+{
+  "browser_errors": [],
+  "stages": [
+    {
+      "image": "01-device.png",
+      "stage": "SYSTEM_CHECK",
+      "revision": 1,
+      "progress": {
+        "current": 0,
+        "total": 0,
+        "label": ""
+      }
+    },
+    {
+      "image": "02-target.png",
+      "stage": "TARGET_VERIFY",
+      "revision": 3,
+      "progress": {
+        "current": 0,
+        "total": 0,
+        "label": ""
+      }
+    },
+    {
+      "image": "03-pose-preparation.png",
+      "stage": "SAFETY_DRY_RUN",
+      "revision": 5,
+      "progress": {
+        "current": 0,
+        "total": 60,
+        "label": "60 recorded poses; no motion safety check in offline replay"
+      }
+    },
+    {
+      "image": "04-placement.png",
+      "stage": "A4_PLACEMENT",
+      "revision": 7,
+      "progress": {
+        "current": 0,
+        "total": 0,
+        "label": ""
+      }
+    },
+    {
+      "image": "05-capture-left.png",
+      "stage": "CAPTURE_LEFT",
+      "revision": 22,
+      "progress": {
+        "current": 6,
+        "total": 60,
+        "label": "OFFLINE left 6/30 \u00b7 left_05: 22 corners; accepted"
+      }
+    },
+    {
+      "image": "06-capture-right.png",
+      "stage": "CAPTURE_RIGHT",
+      "revision": 82,
+      "progress": {
+        "current": 36,
+        "total": 60,
+        "label": "OFFLINE right 6/30 \u00b7 right_05: 19 corners; accepted"
+      }
+    },
+    {
+      "image": "07-validation.png",
+      "stage": "VALIDATE_GEOMETRY",
+      "revision": 133,
+      "progress": {
+        "current": 0,
+        "total": 0,
+        "label": ""
+      }
+    },
+    {
+      "image": "08-review.png",
+      "stage": "REVIEW_AND_EXPORT",
+      "revision": 135,
+      "progress": {
+        "current": 0,
+        "total": 0,
+        "label": ""
+      }
+    },
+    {
+      "image": "09-complete.png",
+      "stage": "COMPLETE",
+      "revision": 137,
+      "progress": {
+        "current": 0,
+        "total": 0,
+        "label": ""
+      }
+    }
+  ],
+  "preview_source_matches": [
+    {
+      "pose_id": "left_05",
+      "mean_absolute_rgb_difference": 2.3990092165898615,
+      "image": "05-capture-left.png"
+    },
+    {
+      "pose_id": "right_05",
+      "mean_absolute_rgb_difference": 1.6713940092165898,
+      "image": "06-capture-right.png"
+    }
+  ],
+  "actions": "browser clicks only; no response mocking or DOM state edits",
+  "viewport": [
+    1600,
+    900
+  ],
+  "full_page": true,
+  "result_source": "recomputed from this run recorded RGB and FK"
+}

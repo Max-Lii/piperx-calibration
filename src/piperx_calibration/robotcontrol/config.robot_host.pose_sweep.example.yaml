@@ -1,0 +1,38 @@
+# Supervised 96-pose calibration sweep for the currently measured Piper-X
+# workcell. Copy to a host-local file; do not commit the host copy.
+server:
+  host: 127.0.0.1
+  port: 8008
+lease:
+  ttl_s: 15.0
+connection:
+  idle_disconnect_s: 60.0
+driver:
+  kind: piper_x_motion
+  left_can: can_left
+  right_can: can_right
+  firmware_profile: v188
+  interface: socketcan
+  motion_speed_percent: 20
+  allow_calibration_pose_motion: true
+  # Telemetry on this workcell measured 0.0006 m closed and 0.1013 m manually
+  # opened. Commands use the nominal 0.1000 m hardware range.
+  gripper_open_width_m: 0.1000
+  gripper_force_n: 1.0
+  # Envelope of the reviewed 48+48 RoboTwin pose library plus Home. It is
+  # intentionally not a generic full joint range.
+  joint_limits_rad:
+    - [-0.70, 0.70]
+    - [-0.10, 0.50]
+    - [-0.85, 0.10]
+    - [-0.10, 1.45]
+    - [-0.45, 0.45]
+    - [-0.60, 0.60]
+safety:
+  joint_limit_rad: 2.8
+  safe_home: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+camera:
+  kind: mock
+auth:
+  mode: disabled
+  api_key_env: ROBOTCONTROL_API_KEY

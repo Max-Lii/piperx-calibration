@@ -1,0 +1,87 @@
+{
+  "run_id": "BOARD_002_20261024_tutorial30_default",
+  "source_records_unchanged": true,
+  "source_pose_ids": [
+    "right_00",
+    "right_05",
+    "right_10",
+    "right_15"
+  ],
+  "layout": "2 columns by 2 rows; identical observer crop; full wrist frames",
+  "canvas_px": [
+    2600,
+    1610
+  ],
+  "generator": "doc/scripts/compose_tutorial_figures.py",
+  "reference_design": "doc/scripts/prepare_figures.py",
+  "pairs": [
+    {
+      "pose_id": "right_00",
+      "observer": "experiments/BOARD_002_20261024_tutorial30_default/right_00_observer.png",
+      "wrist": "experiments/BOARD_002_20261024_tutorial30_default/right_00_right_wrist.png",
+      "observer_sha256": "838095e783d89273a44157c104fb17744ad3bf6a56c39d12662e98d295ca6f14",
+      "wrist_sha256": "f3618a92770db68711338a6c3ce5d1837a6e89fd7fd69ae4c90179b595cf5ee9",
+      "observer_crop_xyxy": [
+        120,
+        0,
+        560,
+        330
+      ],
+      "wrist_crop": null,
+      "range_to_P_origin_m": 0.5781270065608308,
+      "normal_tilt_deg": 43.81783022311581,
+      "corner_count": 21
+    },
+    {
+      "pose_id": "right_05",
+      "observer": "experiments/BOARD_002_20261024_tutorial30_default/right_05_observer.png",
+      "wrist": "experiments/BOARD_002_20261024_tutorial30_default/right_05_right_wrist.png",
+      "observer_sha256": "90f5c55e4e74e45ed1b634ca2e34e1d6af18636154577d2959e0fb6caa623b4d",
+      "wrist_sha256": "8f52e74184aa089b3451cb5fbb3a67e4902c00a8df086cf91cafd13555da1967",
+      "observer_crop_xyxy": [
+        120,
+        0,
+        560,
+        330
+      ],
+      "wrist_crop": null,
+      "range_to_P_origin_m": 0.5508700861725137,
+      "normal_tilt_deg": 36.08616732883474,
+      "corner_count": 19
+    },
+    {
+      "pose_id": "right_10",
+      "observer": "experiments/BOARD_002_20261024_tutorial30_default/right_10_observer.png",
+      "wrist": "experiments/BOARD_002_20261024_tutorial30_default/right_10_right_wrist.png",
+      "observer_sha256": "0f24f61f6b513506f5f89e8b893fb894af981cac214728237ee28d8791e62287",
+      "wrist_sha256": "7b8601f2e8be47f10f71e572bf59a09d1d88908f5bd0d4be26e69c7de461457c",
+      "observer_crop_xyxy": [
+        120,
+        0,
+        560,
+        330
+      ],
+      "wrist_crop": null,
+      "range_to_P_origin_m": 0.5122280369881186,
+      "normal_tilt_deg": 34.65665826928285,
+      "corner_count": 22
+    },
+    {
+      "pose_id": "right_15",
+      "observer": "experiments/BOARD_002_20261024_tutorial30_default/right_15_observer.png",
+      "wrist": "experiments/BOARD_002_20261024_tutorial30_default/right_15_right_wrist.png",
+      "observer_sha256": "4241891e4f2fc240ad3a1541eb11f47fbd712f99970e3cbf3abce90e8d1e5c9f",
+      "wrist_sha256": "d0232115fabdaca8d967b899a7b932a3a0cd07835a8048ce9b8d57b427d6bba6",
+      "observer_crop_xyxy": [
+        120,
+        0,
+        560,
+        330
+      ],
+      "wrist_crop": null,
+      "range_to_P_origin_m": 0.5933616984148039,
+      "normal_tilt_deg": 28.734586448685434,
+      "corner_count": 21
+    }
+  ]
+}
