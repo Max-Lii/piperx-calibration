@@ -4,7 +4,7 @@ Geometric calibration for a dual-arm Piper-X workcell with two wrist-mounted D43
 
 The system combines robot joint feedback with images of a stationary ChArUco board to estimate the robot-base and camera installation transforms. A web interface guides the operator through device checks, sequential arm acquisition, validation, and JSON export.
 
-[Documentation](doc/content/docs/index.mdx)
+[Documentation](https://max-lii.github.io/piperx-calibration/)
 
 ## Features
 
