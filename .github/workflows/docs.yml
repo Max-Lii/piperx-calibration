@@ -1,11 +1,6 @@
 name: Documentation
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['doc/**', '.github/workflows/docs.yml']
-  pull_request:
-    paths: ['doc/**', '.github/workflows/docs.yml']
 permissions:
   contents: read
 concurrency:
@@ -36,7 +31,7 @@ jobs:
           path: doc/out
           retention-days: 1
   deploy:
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && vars.PAGES_ENABLED == 'true'))
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
     needs: build
     runs-on: ubuntu-latest
     permissions:

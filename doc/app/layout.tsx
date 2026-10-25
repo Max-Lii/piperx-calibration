@@ -6,8 +6,7 @@ import './global.css';
 export const metadata: Metadata = { title: 'Piper-X Calibration', description: 'A practical guide to robot, camera, and workcell calibration.' };
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <html lang="en" suppressHydrationWarning><body><Provider>
-    <DocsLayout tree={source.getPageTree()} sidebar={{ enabled: false }} nav={{ title: 'Piper-X Calibration', url: '/' }}
-      {...(process.env.NEXT_PUBLIC_REPOSITORY_URL ? { githubUrl: process.env.NEXT_PUBLIC_REPOSITORY_URL } : {})}>
+    <DocsLayout tree={source.getPageTree()} sidebar={{ enabled: false }} nav={{ title: 'Piper-X Calibration', url: '/' }}>
       {children}
     </DocsLayout>
   </Provider></body></html>;
