@@ -2,7 +2,7 @@
 
 [![Piper-X Calibration: a simulated dual-arm workcell with two wrist D435 cameras, one fixed third-view D435, and a ChArUco target](assets/readme/banner.webp)](https://max-lii.github.io/piperx-calibration/)
 
-[English tutorial](https://max-lii.github.io/piperx-calibration/) · [中文教程](https://max-lii.github.io/piperx-calibration/zh/)
+[![Documentation](assets/readme/documentation.svg)](https://max-lii.github.io/piperx-calibration/)
 
 Geometric calibration for a dual-arm Piper-X workcell with two wrist-mounted D435 cameras and one fixed third-view D435.
 
