@@ -71,3 +71,7 @@ The exported JSON contains the full installation transforms, quality metrics, an
 For the archived case, the reference is the OpenCV ChArUco board frame **P**. Legacy fields such as `T_world_base` use P despite the word `world` in their names. Before applying a result, check its reference-frame metadata and end-effector definition, then convert it into the coordinate conventions used by your simulation.
 
 The tutorial covers the geometry, installation, real-device configuration, safety requirements, and concrete RoboTwin integration examples. Physical acquisition uses the independent Robot Control service and requires checks of the actual workcell before motion.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Third-party dependencies and assets retain their respective licenses.

@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "piperx-calibration"
 version = "0.1.0.dev0"
 description = "Piper-X workcell calibration and robotcontrol reference implementation"
+license = {file = "LICENSE"}
 requires-python = ">=3.12,<3.13"
 dependencies = [
   "fastapi==0.115.12",
